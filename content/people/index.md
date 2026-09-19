@@ -22,4 +22,28 @@ sections:
       show_interests: false
       show_role: true
       show_social: true
+
+  - block: markdown
+    content:
+      title:
+      subtitle:
+      text: |
+        Interested in joining the lab? We welcome inquiries from prospective students at all career stages (M.S., Ph.D.) as well as postdocs — read [how to apply](../resources/how-to-apply/) for details.
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          document.querySelectorAll('.wg-people .people-person').forEach(function (card) {
+            var nameLink = card.querySelector('.portrait-title h2 a');
+            var title = card.querySelector('.portrait-title');
+            if (!nameLink || !title || title.querySelector('.bl-learn-more')) return;
+            var link = document.createElement('a');
+            link.href = nameLink.getAttribute('href');
+            link.className = 'bl-learn-more';
+            link.innerHTML = 'Learn more &rarr;';
+            title.appendChild(link);
+          });
+        });
+        </script>
+    design:
+      columns: '1'
 ---

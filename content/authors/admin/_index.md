@@ -25,7 +25,7 @@ interests:
   - Biodiversity informatics
   - Insect phenology
   - Urban ecology
-  - Ecological modeling
+  - Quantitative ecology
 
 education:
   courses:
@@ -43,16 +43,16 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: '#contact'
+    link: 'mailto:mbelitz@wisc.edu'
   - icon: google-scholar
     icon_pack: ai
     link: 'https://scholar.google.com/citations?user=2QnS7eQAAAAJ&hl=en'
   - icon: github
     icon_pack: fab
     link: 'https://github.com/mbelitz'
-  - icon: twitter
-    icon_pack: fab
-    link: 'https://twitter.com/MikesMothModels'
+  - icon: binoculars
+    icon_pack: fas
+    link: 'https://www.inaturalist.org/people/608645'
 
 email: ''
 highlight_name: true
@@ -62,8 +62,8 @@ user_groups:
   - Principal Investigator
 ---
 
-Michael Belitz is a global change biologist and eco-informatician interested in combining data science and field approaches to understand how insects and ecosystems respond to climate change, urbanization, and agriculture. His work integrates diverse data sources such as museum collections, participatory science platforms, remote sensing, and images with computational tools to fill biodiversity knowledge gaps at broad spatial, temporal, and taxonomic scales.
+Michael Belitz is a global change biologist and eco-informatician interested in combining hierarchical modeling, data science, and field approaches to understand how insects and ecosystems respond to climate change, urbanization, and agriculture. His work integrates diverse data sources with computational tools to fill biodiversity knowledge gaps at broad spatial, temporal, and taxonomic scales.
 
-Dr. Belitz is fundamentally motivated by a desire to address biodiversity loss and mitigate the consequences of anthropogenic change and insect declines on ecosystem services. Work in the lab takes an interdisciplinary and collaborative approach to inform evidence-based conservation and climate adaptation efforts. Dr. Belitz is interested in developing innovative approaches to data collection to rapidly fill biodiversity data gaps. He is also interested in uniting ecological and biodiversity data to scale analyses and to develop ecoinformatics tools to make existing biodiversity data more useful and accessible to the ecological research community.
+Dr. Belitz is motivated by the dual challenges of biodiversity loss and climate change. Work in the lab takes an interdisciplinary and collaborative approach to inform evidence-based conservation and climate adaptation efforts. Dr. Belitz is interested in developing innovative approaches to data collection that can rapidly fill entomological data gaps. He is also interested in uniting environmental and biodiversity data to scale analyses and to develop ecoinformatics tools to make existing data more useful and accessible to the ecological research community.
 
 Prior to joining UW-Madison, Michael was an NSF Postdoctoral Research Fellow in Biology, co-mentored across Michigan State University and the University of British Columbia.

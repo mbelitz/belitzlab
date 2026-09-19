@@ -9,24 +9,16 @@ sections:
       title: Code of Conduct
       subtitle: ''
       text: |
-        *[DRAFT — placeholder text below. Replace with your own language before publishing; many labs adapt from published examples such as the Zipkin Lab, Zuckerberg Lab, or Zipkin/Youngflesh-affiliated codes of conduct.]*
 
-        The Belitz Global Change Entomology Lab is committed to maintaining a productive, respectful, and inclusive environment for everyone in the lab, regardless of career stage, background, or identity.
+        The Belitz Global Change Entomology Lab operates within the [University of Wisconsin-Madison Department of Entomology's Code of Conduct & Guidelines for Graduate Students and Advisors](https://entomology.wisc.edu/graduate-study/code-of-conduct/). That department-wide document describes our shared values on inclusion, integrity, honesty, collaboration, community, and respect. Further, it defines unacceptable behaviors (discrimination, harassment, retaliation, academic misconduct, and more), sets expectations for advisor and student mentoring, work hours, leave, and funding, and lists the campus offices available for reporting and support. The Department's Code of Conduct applies to everyone in the lab. **If you experience or witness behavior inconsistent with the department code of conduct, please use the reporting channels it describes**, or speak with Michael directly.
 
-        **We expect all lab members to:**
+        **In this lab, we additionally aim to:**
 
-        - Treat one another with respect, patience, and professionalism.
-        - Give credit generously and communicate openly about authorship and contributions.
-        - Support one another's professional development and growth.
+        - Discuss authorship expectations, lab policies, and advising style with every prospective student or postdoc before they join.
+        - Give credit generously and communicate openly about authorship and contributions throughout a project, not just at submission.
         - Engage in constructive, evidence-based scientific discussion and welcome disagreement conducted respectfully.
-        - Help maintain a lab culture where people feel safe raising concerns.
-
-        **We do not tolerate:**
-
-        - Harassment, discrimination, or bullying of any kind.
-        - Retaliation against anyone who raises a concern in good faith.
-
-        **Reporting concerns:** Any lab member who experiences or witnesses behavior inconsistent with this code of conduct is encouraged to speak with Michael directly, or to use the University of Wisconsin-Madison's [Office of Compliance](https://compliance.wisc.edu/) or relevant departmental reporting channels if they'd prefer not to raise it directly.
+        - Support collaboration as a better model than competition within the lab and with colleagues at UW–Madison and elsewhere.
+        - Advocate for Open Science and reproducibility. While there are many reasons for not sharing data openly immediately, the data and software we generate is released under open licenses whenever possible. We view this as an important contribution to the scientific community.
 
         This document will evolve with input from lab members over time.
     design:

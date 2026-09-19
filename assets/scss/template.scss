@@ -1,3 +1,22 @@
+// ============================================================
+// Belitz Lab — design tokens (Concept 2: Modern Card Grid)
+// ============================================================
+:root {
+  --bl-green: #2f4a3c;
+  --bl-green-dark: #1e332a;
+  --bl-rust: #c1652f;
+  --bl-paper: #faf9f5;
+  --bl-paper-alt: #f1efe6;
+  --bl-ink: #232420;
+  --bl-ink-soft: #5b5d54;
+  --bl-line: #e2ded1;
+  --bl-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: var(--bl-paper);
+}
+
 // Make page header alignment consistent with widget page header alignment
 .universal-wrapper h1 {
   text-align: center;
@@ -6,4 +25,414 @@
 // Center the CTA shortcode button
 .cta-group {
   justify-content: center;
+}
+
+// ------------------------------------------------------------
+// Site nav — clean modern sans, consistent across every page
+// ------------------------------------------------------------
+#navbar-main {
+  font-family: var(--bl-sans);
+  background: #fff !important;
+  border-bottom: 1px solid var(--bl-line);
+}
+
+#navbar-main .navbar-brand {
+  font-weight: 700;
+  color: var(--bl-green-dark) !important;
+}
+
+#navbar-main .nav-link {
+  font-weight: 500;
+  color: var(--bl-ink) !important;
+}
+
+#navbar-main .nav-link:hover {
+  color: var(--bl-rust) !important;
+}
+
+// ============================================================
+// Inner pages — Research, People, News, Resources
+// Lightweight typography pass so these pages read as part of the
+// same system as the homepage, without rebuilding their layouts.
+// ============================================================
+
+// Page titles: the block/page title Hugo Blox renders as the lone
+// <h1> for Research, People, Resources (inside .section-heading)
+// and News (bare, inside .universal-wrapper).
+.section-heading h1,
+.universal-wrapper > h1 {
+  font-family: var(--bl-sans);
+  font-weight: 800;
+  color: var(--bl-green-dark);
+  letter-spacing: -0.01em;
+}
+
+// Inline subheadings within markdown widgets (currently only the
+// Research page's four theme sections).
+.wg-markdown h3 {
+  font-family: var(--bl-sans);
+  font-weight: 700;
+  color: var(--bl-green-dark);
+  margin-top: 2rem;
+}
+
+// Body links inside markdown widgets (Research's "related work"
+// citations, Resources' policy links) pick up the brand accent
+// instead of the theme's default blue.
+.wg-markdown a {
+  color: var(--bl-rust);
+}
+
+.wg-markdown a:hover {
+  color: var(--bl-green);
+}
+
+// A short centered intro line, for use under a page's <h1> title
+// (mirrors the homepage's section-head paragraph treatment).
+.bl-page-intro {
+  font-family: var(--bl-sans);
+  text-align: center;
+  color: var(--bl-ink-soft);
+  font-size: 0.95rem;
+  max-width: 560px;
+  margin: 0 auto 2rem;
+}
+
+// ------------------------------------------------------------
+// People page — reskin the theme's auto-generated person cards
+// ------------------------------------------------------------
+.wg-people .people-person {
+  background: var(--bl-paper-alt);
+  border: 1px solid var(--bl-line);
+  border-radius: 14px;
+  padding: 1.5rem 1.5rem 1.25rem;
+  text-align: center;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.wg-people .people-person:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(30, 51, 42, 0.12);
+}
+
+.wg-people .avatar-circle {
+  border: 3px solid #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wg-people .portrait-title h2 {
+  font-family: var(--bl-sans);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--bl-ink);
+  margin: 0.9rem 0 0.15rem;
+}
+
+.wg-people .portrait-title h2 a {
+  color: inherit !important;
+}
+
+.wg-people .portrait-title h3 {
+  font-family: var(--bl-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--bl-ink-soft);
+  margin: 0 0 0.6rem;
+}
+
+.wg-people .network-icon a {
+  color: var(--bl-ink-soft) !important;
+}
+
+.wg-people .network-icon a:hover {
+  color: var(--bl-rust) !important;
+}
+
+// "Learn more" link appended under each card's social icons via
+// the small script at the bottom of content/people/index.md
+.wg-people .bl-learn-more {
+  display: block;
+  margin-top: 0.7rem;
+  font-family: var(--bl-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--bl-rust) !important;
+  text-decoration: none !important;
+}
+
+.wg-people .bl-learn-more:hover {
+  color: var(--bl-green) !important;
+}
+
+// Hide the auto-generated "Latest" post list on author profile
+// pages — that's already covered by the News page.
+.article-widget.content-widget-hr {
+  display: none;
+}
+
+// Group headings ("Postdocs", "Grad Students", etc.)
+.wg-people h2.mb-4 {
+  font-family: var(--bl-sans);
+  font-weight: 800;
+  color: var(--bl-green-dark);
+  font-size: 1.3rem;
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+// ------------------------------------------------------------
+// News listing — bring article titles/links into the palette
+// ------------------------------------------------------------
+.stream-item .section-subheading.article-title a {
+  font-family: var(--bl-sans);
+  font-weight: 700;
+  color: var(--bl-green-dark);
+}
+
+.stream-item .section-subheading.article-title a:hover {
+  color: var(--bl-rust);
+}
+
+.stream-item .article-metadata a {
+  color: var(--bl-ink-soft);
+}
+
+// ============================================================
+// Homepage — hero, research-theme cards, photo showcase
+// (raw HTML embedded in content/_index.md's markdown blocks)
+// ============================================================
+
+.bl-hero-wrap {
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.bl-hero-accent {
+  position: absolute;
+  z-index: 0;
+  opacity: 0.45;
+  pointer-events: none;
+  user-select: none;
+}
+
+// A loose diagonal cascade down the page, alternating sides rather
+// than a symmetric grid: top-left, mid-right, bottom-left.
+.bl-hero-accent-dragonfly {
+  top: -6px;
+  left: -2px;
+  width: 96px;
+  transform: rotate(-12deg);
+}
+
+.bl-hero-accent-katydid {
+  top: 38%;
+  right: -2px;
+  width: 94px;
+  transform: rotate(14deg);
+}
+
+.bl-hero-accent-butterfly {
+  top: 76%;
+  left: 6px;
+  width: 108px;
+  transform: rotate(-9deg);
+}
+
+// Only show accents once the page container has reached its wide
+// (xl) breakpoint, where the hero reliably gets its full 130px of
+// side clearance. Below that, Bootstrap's container width plateaus
+// at 960px for a while, which isn't enough room and risks overlap.
+@media (max-width: 1199px) {
+  .bl-hero-accent {
+    display: none;
+  }
+}
+
+.bl-hero {
+  position: relative;
+  z-index: 1;
+  font-family: var(--bl-sans);
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 1rem;
+}
+
+.bl-badge {
+  display: inline-block;
+  background: #fff;
+  color: var(--bl-green);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--bl-line);
+  margin-bottom: 1.25rem;
+}
+
+.bl-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--bl-green-dark);
+  margin: 0 0 1.1rem;
+  line-height: 1.15;
+}
+
+.bl-hero p {
+  color: var(--bl-ink-soft);
+  line-height: 1.7;
+  font-size: 1.05rem;
+  max-width: 620px;
+  margin: 0 auto 1.75rem;
+}
+
+.bl-hero-btns {
+  display: flex;
+  gap: 0.85rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.bl-btn {
+  font-family: var(--bl-sans);
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.bl-btn:hover {
+  transform: translateY(-1px);
+}
+
+.bl-btn-primary {
+  background: var(--bl-rust);
+  color: #fff !important;
+}
+
+.bl-btn-primary:hover {
+  box-shadow: 0 6px 16px rgba(193, 101, 47, 0.35);
+}
+
+.bl-btn-ghost {
+  background: transparent;
+  color: var(--bl-green) !important;
+  border: 1.5px solid var(--bl-green);
+}
+
+.bl-btn-ghost:hover {
+  background: var(--bl-green);
+  color: #fff !important;
+}
+
+// ------------------------------------------------------------
+// Section heading (used above the card grid + photo showcase)
+// ------------------------------------------------------------
+.bl-section-head {
+  font-family: var(--bl-sans);
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 2rem;
+}
+
+.bl-section-head h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--bl-green-dark);
+  margin: 0 0 0.5rem;
+}
+
+.bl-section-head p {
+  color: var(--bl-ink-soft);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+// ------------------------------------------------------------
+// Research theme cards
+// ------------------------------------------------------------
+.bl-card-grid {
+  font-family: var(--bl-sans);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+// Modifier for pages with 3 items instead of 4 (e.g. Resources)
+.bl-card-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1000px;
+}
+
+.bl-card {
+  background: var(--bl-paper-alt);
+  border: 1px solid var(--bl-line);
+  border-radius: 14px;
+  padding: 1.5rem;
+  text-decoration: none !important;
+  display: block;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.bl-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(30, 51, 42, 0.12);
+}
+
+.bl-card .bl-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: var(--bl-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.bl-card .bl-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: #fff;
+}
+
+.bl-card h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--bl-ink);
+}
+
+.bl-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--bl-ink-soft);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .bl-card-grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .bl-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bl-hero h1 {
+    font-size: 1.9rem;
+  }
 }
