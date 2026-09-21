@@ -28,7 +28,7 @@ sections:
       title:
       subtitle:
       text: |
-        Interested in joining the lab? We welcome inquiries from prospective students at all career stages (M.S., Ph.D.) as well as postdocs — read [how to apply](../resources/how-to-apply/) for details.
+        Interested in joining the lab? We welcome inquiries from prospective students at all career stages (M.S., Ph.D., postdocs). Please read [how to apply](../resources/how-to-apply/) for details.
 
         <script>
         document.addEventListener('DOMContentLoaded', function () {

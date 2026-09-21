@@ -31,8 +31,8 @@ social:
   - icon: globe
     icon_pack: fas
     link: 'https://liu22yi.github.io/'
-  - icon: binoculars
-    icon_pack: fas
+  - icon: inaturalist-square
+    icon_pack: ai
     link: 'https://www.inaturalist.org/people/yi80'
 email: 'liu2739@wisc.edu'
 highlight_name: false

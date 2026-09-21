@@ -1,3 +1,7 @@
+// Newer academicons icons (e.g. iNaturalist) aren't in the theme's
+// bundled icon font version, so pull in the current set for those.
+@import url('https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css');
+
 // ============================================================
 // Belitz Lab — design tokens (Concept 2: Modern Card Grid)
 // ============================================================

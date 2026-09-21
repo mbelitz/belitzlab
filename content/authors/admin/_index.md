@@ -50,8 +50,8 @@ social:
   - icon: github
     icon_pack: fab
     link: 'https://github.com/mbelitz'
-  - icon: binoculars
-    icon_pack: fas
+  - icon: inaturalist-square
+    icon_pack: ai
     link: 'https://www.inaturalist.org/people/608645'
 
 email: ''
